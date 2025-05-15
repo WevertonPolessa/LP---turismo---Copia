@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploMar</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="top-bar">
+        <h1 class="logo">ExploMar</h1>
+        <div class="flags">
+          <img src="https://flagcdn.com/w40/br.png" alt="BR" />   
+          <input type="text" name="" class="top-bar-search" placeholder="Pesquise aqui">
+        <button class="btn-login"><a href="#index -HOME">LOGIN</a></button>
+        <button class="btn-outline"><a href="#">Cadastre-se</a></button>
+       </div>
+      </div>
+      
+      <div class="hero-content">
+        <h2>Sua próxima viagem começa em Maricá</h2>
+        <nav class="menu">
+          <button class="menu-item active">Início</button>
+          <button class="menu-item">Destinos</button>
+          <button class="menu-item">Guia Turísticos</button>
+          <button class="menu-item">Trabalhe conosco</button>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="search-box">
+      <input type="text" id="cidade" placeholder="Nome da cidade" />
+      <input type="date" />
+      <input type="number" placeholder="Quantidade de pessoas" />
+      <button class="btn-search" onclick="buscar()">Pesquisar</button>
+    </div>
+    
+    <div id="resposta"> </div>
+
+    <section class="section">
+      <h3>Destinos mais procurados</h3>
+      <p>Lugares mais desejados por quem viaja por Maricá</p>
+      <div class="grid grid-2-3">
+        <div class="placeholder large"></div>
+        <div class="placeholder large"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+    </section>
+
+
+
+    <!--estrtutura do favorito-->
+    <section class="section">
+      <h3>Favorite um lugar</h3>
+      <p>Favorite uma viagem para não se esquecer</p>
+      <div class="grid grid-2-3">
+          <div class="placeholder">
+            <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="placeholder">
+            <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="placeholder">
+            <button class="favorite-button"><i class="fa-regular fa-heart"></i></button>
+          </div>    
+      </div>
+
+      <h4>Itens Favoritos:</h4>
+      <ul id="lista-favoritos">
+        <!-- Aqui os itens favoritados serão exibidos -->
+      </ul>
+    </section>
+
+    <div id="modal-favoritos" style="display:none;">
+      <h3>Favoritos Salvos</h3>
+      <ul id="lista-favoritos-salvos">
+        <!-- Favoritos salvos serão listados aqui -->
+      </ul>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+
+    <div id="modal-favoritos" style="display:none;">
+      <h3>Favoritos Salvos</h3>
+      <ul id="lista-favoritos-salvos">
+        <!-- Favoritos serão listados aqui -->
+      </ul>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+
+
+        
+    </section>
+
+    <section class="section">
+      <h3>Organize sua viagem com praticidade e agilidade</h3>
+      <p>Escolha seu destino e explore o melhor de Maricá</p>
+      <div class="tags">
+        <button class="tag active">Praia</button>
+        <button class="tag">Cidade</button>
+        <button class="tag">Natureza</button>
+        <button class="tag">Descanso</button>
+      </div>
+      <div class="grid grid-5">
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+      
+      
+      
+
+    <section class="promo-box">
+      <div class="promo-text">
+        <h4>Faça login e economize</h4>
+        <p>Cadastre-se e ganhe 5% de desconto em determinados lugares</p>
+        <button class="btn-black">Login</button>
+        <button class="btn-outline">Cadastre-se</button>
+      </div>
+      <div class="promo-img">
+        🎁
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <p>&copy; 2025 ExploMar - Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <div class="links">
+          <p><strong>Termos</strong></p>
+          <p><a href="#">Privacidade e Cookies</a></p>
+          <p><a href="#">Termos</a></p>
+          <p><a href="#">Trabalhe conosco</a></p>
+        </div>
+        <div class="links">
+          <p><strong>Parceiros</strong></p>
+          <p>Prefeitura</p>
+          <p>Codemar</p>
+        </div>
+        <div class="links">
+          <p><strong>Redes Sociais</strong></p>
+          <p><a href="#">Facebook</a></p>
+          <p><a href="#">Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
